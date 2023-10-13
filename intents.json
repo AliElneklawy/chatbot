@@ -31,7 +31,8 @@
                 "Good evening",
                 "How are you doing?",
                 "Hello there!",
-                "Hey, buddy!"
+                "Hey, buddy!",
+                "how is it going bro?!"
             ],
             "responses": [
                 "Hello!",
@@ -129,8 +130,8 @@
                 "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
                 "What do you call a snowman with a suntan? A puddle.",
                 "How does a penguin build a house? Igloos it together",
-                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
-                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "I went to see the doctor about my short-term memory problems - the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I've lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
                 "o what if I don't know what 'Armageddon' means? It's not the end of the world."
             ],
             "context": [
@@ -369,6 +370,20 @@
             ],
             "responses": [
                 "Please mail your suggestions to es-ali.elsayed2024@alexu.edu.eg or contact the developer on his linkedin account: "
+            ]
+        },
+        {
+            "tag": "sadness",
+            "patterns": [
+                "I am sad",
+                "i think i am not so happy",
+                "life is not fair",
+                "life is hard"
+            ],
+            "responses": [
+                "Don't worry, bro. Everthing will be fine.",
+                "Don't think too much about it. Just let it go, bro.",
+                "Believe me, it will go away."
             ]
         },
             {"tag": "riddle",
