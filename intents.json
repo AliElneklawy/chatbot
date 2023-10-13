@@ -32,7 +32,8 @@
                 "How are you doing?",
                 "Hello there!",
                 "Hey, buddy!",
-                "how is it going bro?!"
+                "how is it going bro?!",
+                "how is everything going with you"
             ],
             "responses": [
                 "Hello!",
@@ -55,7 +56,7 @@
                 "bbye",
                 "see ya!",
                 "cya!",
-                "i need to go"
+                "i have to go"
             ],
             "responses": [
                 "See you!",
@@ -161,7 +162,7 @@
                 "what day is it today"
             ],
             "responses": [
-                "Date and Time"
+                "Displaying date and time..\n"
             ]
         },
         {
@@ -201,7 +202,7 @@
                 "who created you?"
             ],
             "responses": [
-                "I was made by Ali Elneklawy as a part of his intern at SYNC INTERN'S."
+                "I was made by Ali Elneklawy as a part of his internship at SYNC INTERN'S."
             ]
         },
         {
