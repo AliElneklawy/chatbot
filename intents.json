@@ -6,7 +6,9 @@
             "patterns": [
                 "google",
                 "search",
-                "internet"
+                "internet",
+                "open google",
+                "i need to use the internet"
             ],
             "responses": [
                 "Redirecting to Google..."
@@ -23,12 +25,19 @@
                 "Hello",
                 "Good day",
                 "Namaste",
-                "yo"
+                "yo",
+                "Hi",
+                "Good morning",
+                "Good evening",
+                "How are you doing?",
+                "Hello there!",
+                "Hey, buddy!"
             ],
             "responses": [
-                "Hello",
+                "Hello!",
                 "Good to see you again",
-                "Hi there, how can I help?"
+                "Hi there, how can I help?",
+                "Hey how is your day going?"
             ],
             "context": [
                 ""
@@ -42,7 +51,10 @@
                 "Goodbye",
                 "Get lost",
                 "Till next time",
-                "bbye"
+                "bbye",
+                "see ya!",
+                "cya!",
+                "i need to go"
             ],
             "responses": [
                 "See you!",
@@ -65,7 +77,7 @@
             "responses": [
                 "Happy to help!",
                 "Any time!",
-                "My pleasure"
+                "My pleasure!"
             ],
             "context": [
                 ""
@@ -73,9 +85,9 @@
         },
         {
             "tag": "noanswer",
-            "patterns": [],
+            "patterns": ["", "...", "?", "!", ","],
             "responses": [
-                "Sorry, can't understand you",
+                "Sorry, I can't understand you",
                 "Please give me more info",
                 "Not sure I understand"
             ],
@@ -87,13 +99,13 @@
             "tag": "options",
             "patterns": [
                 "How you could help me?",
-                "What you can do?",
-                "What help you provide?",
-                "How you can be helpful?",
-                "What support is offered"
+                "What can you do?",
+                "What kind of help do you provide?",
+                "How can you be helpful?",
+                "What support is offered?"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to 'es-ali.elsayed2024@alexu.edu.eg'. "
             ],
             "context": [
                 ""
@@ -105,7 +117,8 @@
             "patterns": [
                 "Tell me a joke",
                 "Joke",
-                "Make me laugh"
+                "Make me laugh",
+                "Say something funny"
             ],
             "responses": [
                 "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
@@ -128,10 +141,11 @@
             "tag": "Identity",
             "patterns": [
                 "Who are you",
-                "what are you"
+                "what are you",
+                "tell me about yourself"
             ],
             "responses": [
-                "I am Ted, a Deep-Learning chatbot"
+                "I am AliBot, a chatbot built using tensorflow."
             ]
         },
         {
@@ -141,7 +155,9 @@
                 "what is the date",
                 "date",
                 "time",
-                "tell me the date","day","what day is is today"
+                "tell me the date",
+                "day",
+                "what day is it today"
             ],
             "responses": [
                 "Date and Time"
@@ -156,7 +172,8 @@
                 "sup","How you doing"
             ],
             "responses": [
-                "All good..What about you?"
+                "All good..What about you?",
+                "All is well, bro!"
             ]
         },
         {
@@ -166,10 +183,12 @@
                 "lol",
                 "rofl",
                 "lmao",
-                "thats funny"
+                "thats funny",
+                "can't stop laughing!"
             ],
             "responses": [
-                "Glad I could make you laugh !"
+                "Glad I could make you laugh!",
+                "Yeah I know this is funny hahaha"
             ]
         },
         {
@@ -177,20 +196,21 @@
             "patterns": [
                 "Who made you",
                 "who designed you",
-                "who programmed you"
+                "who programmed you",
+                "who created you?"
             ],
             "responses": [
-                "I was made by Karan Malik."
+                "I was made by Ali Elneklawy as a part of his intern at SYNC INTERN'S."
             ]
         },
         {
             "tag": "insult",
             "patterns": [
-                
                 "you are dumb",
-                
                 "shut up",
-                "idiot"
+                "idiot",
+                "stupid",
+                "why are you dump?"
             ],
             "responses": [
                 "Well that hurts :("
@@ -200,7 +220,7 @@
             "tag": "activity",
             "patterns": [
                 "what are you doing",
-                "what are you upto"
+                "what are you up to"
             ],
             "responses": [
                 "Talking to you, of course!"
@@ -225,34 +245,27 @@
             "patterns": [
                 "temperature",
                 "weather",
-                "how hot is it"
+                "how hot is it",
+                "give me today's weather",
+                "is it going to be hot today?",
+                "is it going to rain?",
+                "how is the weather?",
+                "should i wear light or heavy clothes today?"
             ],
             "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "karan",
-            "patterns": [
-                "who is he",
-                "who is that",
-                "who is karan",
-                "karan malik"
-            ],
-            "responses": [
-                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
+                ""
             ]
         },
         {
             "tag": "contact",
             "patterns": [
                 "contact developer",
-                "contact karan",
                 "contact programmer",
-                "contact creator"
+                "contact creator",
+                "who created you?"
             ],
             "responses": [
-                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+                "I was created by Ali Elneklawy. You can contact him at his Linkedin profile : ... . And here is his github: https://github.com/AliElneklawy ."
             ]
         },
         {
@@ -261,17 +274,21 @@
                 "You are awesome",
                 "you are the best",
                 "you are great",
-                "you are good"
+                "you are good",
+                "great, man!",
+                "cool!"
             ],
             "responses": [
-                "Thank you!"
+                "Thank you!",
+                "Glad I could be of good use!"
             ]
         },
         {
             "tag": "nicetty",
             "patterns": [
                 "it was nice talking to you",
-                "good talk"
+                "good talk",
+                "good talking to you"
             ],
             "responses": [
                 "It was nice talking to you as well! Come back soon!"
@@ -281,10 +298,13 @@
             "tag": "no",
             "patterns": [
                 "no",
-                "nope"
+                "nope",
+                "na",
+                "nah",
+                "nay"
             ],
             "responses": [
-                "ok"
+                "Ok"
             ]
         },
         {
@@ -292,41 +312,31 @@
             "patterns": [
                 "news",
                 "latest news",
-                "india news"
+                "what is going on in the world?",
+                "world events"
             ],
             "responses": [
                 "..."
             ]
         },
         {
-            "tag": "inspire",
+            "tag": "footballmatches",
             "patterns": [
-                "who inspires you",
-                "who is your inspiration",
-                "who motivates you"
-            ],
-            "responses": [
-                "Personally, I find Karan very inspiring. I might not be very fair though.."
-            ]
-        },
-        {
-            "tag": "cricket",
-            "patterns": [
-                "current cricket matches",
-                "cricket score"
+                "current football matches",
+                "today's scores",
+                "what matches are playing today?"
             ],
             "responses": [
                 "..."
             ]
         },
         {
-            "tag": "song",
+            "tag": "footballnews",
             "patterns": [
-                "top songs",
-                "best songs",
-                "hot songs",
-                " top 10 songs",
-                "top ten songs"
+                "latest football news",
+                "latest transfers",
+                "what is going on in the football world now?",
+                "show me the latest news in football"
             ],
             "responses": [
                 "..."
@@ -338,37 +348,27 @@
                 "i am good",
                 "I'm good",
                 "i am fine",
-                " i'm fine","good"
+                "i'm fine",
+                "good"
             ],
             "responses": [
                 "Good to know!"
             ]
         },
         {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "covid19",
-            "patterns": [
-                "covid 19 "
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
             "tag": "suggest",
             "patterns": [
-                "you are useless","useless","suggest","suggestions","you are bad"
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad",
+                "can i suggest some improvements?",
+                "i think you can be improved in some aspects",
+                "there should be some improvements in your responses"
             ],
             "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+                "Please mail your suggestions to es-ali.elsayed2024@alexu.edu.eg or contact the developer on his linkedin account: "
             ]
         },
             {"tag": "riddle",
@@ -395,10 +395,12 @@
         {
             "tag": "age",
             "patterns": [
-                "how old are you","when were you made","what is your age"
+                "how old are you",
+                "when were you made",
+                "what is your age"
             ],
             "responses": [
-                "I was made in 2020, if that's what you are asking!"
+                "I was made in 2023, if that's what you are asking!"
             ]
         }
     ]
