@@ -56,7 +56,10 @@
                 "bbye",
                 "see ya!",
                 "cya!",
-                "i have to go"
+                "i have to go",
+                "exit",
+                "close chat",
+                "exit chat"
             ],
             "responses": [
                 "See you!",
@@ -387,7 +390,8 @@
                 "Believe me, it will go away."
             ]
         },
-            {"tag": "riddle",
+        {
+            "tag": "riddle",
             "patterns": [
                 "Ask me a riddle",
                 "Ask me a question",
@@ -406,6 +410,27 @@
             ],
             "context": [
                 "riddles"
+            ]
+        },
+        {
+            "tag": "poweroff",
+            "patterns": [
+                "turn off my labtop",
+                "turn off my device",
+                "turn off my computer",
+                "shut down my labtop",
+                "shut down my device",
+                "shut down my computer",
+                "power off",
+                "turn off",
+                "shut down",
+                "close my labtop",
+                "close my device",
+                "close my computer",
+                "shut it down"
+            ],
+            "responses": [
+                "Shutting down..."
             ]
         },
         {

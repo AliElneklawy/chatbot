@@ -8,6 +8,8 @@ from string import punctuation
 import pickle
 import random
 from tensorflow.keras.models import load_model
+import gradio as gr
+import time
 
 # ==================== Loading Data =====================
 
@@ -67,16 +69,62 @@ def datetime_response() -> str:
     formatted_datetime = current_datetime.strftime("\n  Date: %Y-%m-%d\n  Time: %H:%M:%S")
     return formatted_datetime
 
+def poweroff_response() -> None:
+    confirm = input('Are you sure you want to shutdown your device? (y/n)').lower()
+    if confirm == 'y':
+        import os
+        import platform
 
-def main(msg: str) -> tuple[str, str]:
+        system = platform.system().lower()
+
+        if system == "windows":
+            os.system("shutdown /s /t 0")
+        elif system == "linux" or system == "darwin":
+            os.system("sudo shutdown -h now")
+        else:
+            print("Unsupported operating system.")
+    else:
+        return
+
+def main(msg: str, chat_history: list):
+    chatbot_msg = msg
     msg = cleanup_sentence(msg)
     msg = bag_of_words(words, msg)
     msg_class_probs = predict_class(msg)
     msg_class = classes[msg_class_probs[0][0]]
     response = get_response(msg_class)
-    return response, msg_class
 
-# ==================== Demo =====================
+    if msg_class == 'google':
+        chat_history.append((chatbot_msg, ""))
+        google_response()
+    elif msg_class == 'datetime':
+        current_datetime = datetime_response()
+        response = response + str(current_datetime)
+        chat_history.append((chatbot_msg, ""))
+    elif msg_class == 'goodbye':
+        chat_history.append((chatbot_msg, ""))
+    else:
+        chat_history.append((chatbot_msg, ""))
+
+    for character in response:
+        chat_history[-1] = (chatbot_msg, chat_history[-1][1] + character)
+        time.sleep(0.02)
+        yield "", chat_history
+
+
+
+""" def main(msg: str, chat_history: list): #-> tuple[str, str]:
+    chatbot_msg = msg
+    msg = cleanup_sentence(msg)
+    msg = bag_of_words(words, msg)
+    msg_class_probs = predict_class(msg)
+    msg_class = classes[msg_class_probs[0][0]]
+    response = get_response(msg_class)
+    chat_history.append((chatbot_msg, response))
+    #return response, msg_class
+    return "", chat_history
+
+# ==================== Testing =====================
 
 while True:
     msg = input(">>> ")
@@ -100,5 +148,22 @@ while True:
         print("Bot: " + response)
         break
 
-    else:
+    elif msg_class == 'poweroff':
         print("Bot: " + response)
+        poweroff_response()
+
+    else:
+        print("Bot: " + response) """
+
+# ==================== GUI =====================
+
+with gr.Blocks() as demo:
+    chatbot = gr.Chatbot()
+    msg = gr.Textbox(show_label=False,
+                     placeholder="Enter text and press enter",
+                     autofocus=True)
+    clear = gr.ClearButton([msg, chatbot])
+    msg.submit(main, [msg, chatbot], [msg, chatbot], queue=True)
+
+demo.queue()
+demo.launch()
