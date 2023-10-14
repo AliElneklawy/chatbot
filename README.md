@@ -60,6 +60,3 @@ If you would like to contribute to this project, please follow these guidelines:
 - Make your contributions and ensure they adhere to the project's style and guidelines.
 - Submit a pull request, clearly describing the changes and improvements you've made.
 
-## License
-
-This project is licensed under the MIT License.
