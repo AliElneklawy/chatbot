@@ -17,6 +17,12 @@ This project implements a chatbot using TensorFlow, Gradio, and is deployed on H
 
 This project is a chatbot implemented using TensorFlow and Gradio. The chatbot is deployed on Hugging Face's platform, allowing for easy integration and usage.
 
+
+## Demo
+
+![Demo Video](https://github.com/AliElneklawy/chatbot/blob/main/assets/demo.gif)
+
+
 ## Features
 
 Chatbot: A conversational AI model built using TensorFlow.
@@ -51,7 +57,4 @@ To run the bot locally, run the following command in the terminal
   
     python chat_gui.py
 
-## Demo
-
-![Demo Video](https://github.com/AliElneklawy/chatbot/blob/main/assets/demo.gif)
 
