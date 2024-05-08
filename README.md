@@ -12,7 +12,6 @@ This project implements a chatbot using TensorFlow, Gradio, and is deployed on H
 - [Deployment](#Deployment)
 - [Usage](#Usage)
 - [Demo](#Demo)
-- [Contributing](#Contributing)
 
 ## Overview
 
@@ -55,13 +54,4 @@ To run the bot locally, run the following command in the terminal
 ## Demo
 
 ![Demo Video](https://github.com/AliElneklawy/chatbot/blob/main/assets/demo.gif)
-
-
-## Contributing
-
-If you would like to contribute to this project, please follow these guidelines:
-
-- Fork the repository and create a new branch.
-- Make your contributions and ensure they adhere to the project's style and guidelines.
-- Submit a pull request, clearly describing the changes and improvements you've made.
 
